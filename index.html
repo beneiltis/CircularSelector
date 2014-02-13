@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CircularSelector</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.0/jquery.mobile.min.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.0/jquery.mobile.min.js"></script>
+
+        <!-- Custom script file -->
+        <script src="js/circularselector.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                setupCircularSelector("myCanvas0", "index", "#F0F0F0", "#C2C8CD", "#084385", 1, 100, 25, "Anwender1");
+                setupCircularSelector("myCanvas1", "index", "#F0F0F0", "#C2C8CD", "#084385", 1, 100, 35, "Anwender2");
+                setupCircularSelector("myCanvas2", "index", "#F0F0F0", "#C2C8CD", "#084385", 1, 100, 45, "Anwender3");
+                setupCircularSelector("myCanvas3", "index", "#F0F0F0", "#C2C8CD", "#084385", 1, 100, 55, "Anwender4");
+                setupCircularSelector("myCanvas4", "index", "#F0F0F0", "#C2C8CD", "#084385", 1, 100, 65, "Anwender5");
+                setupCircularSelector("myCanvas5", "index", "#F0F0F0", "#C2C8CD", "#084385", 1, 100, 75, "Anwender6");
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="index">
+            <canvas id="myCanvas0" width="200" height="200"></canvas>
+            <canvas id="myCanvas1" width="200" height="200"></canvas>
+            <canvas id="myCanvas2" width="200" height="200"></canvas><br>
+            <canvas id="myCanvas3" width="200" height="200"></canvas>
+            <canvas id="myCanvas4" width="200" height="200"></canvas>
+            <canvas id="myCanvas5" width="200" height="200"></canvas>
+        </div>
+
+    </body>
+</html>
